@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 const Metrics = () => {
-  const [counters, setCounters] = useState({
+  const [counters, setCounters] = useState<Record<'projects' | 'deployments' | 'satisfaction' | 'uptime', number>>({
     projects: 0,
     deployments: 0,
     satisfaction: 0,
@@ -148,7 +148,7 @@ const Metrics = () => {
               <div className="text-4xl font-bold text-gray-900 mb-2">
                 {metric.key === 'uptime' 
                   ? counters[metric.key].toFixed(1) 
-                  : Math.round(counters[metric.key])}
+                  : Math.round(counters[metric.key as keyof typeof counters])}
                 {metric.suffix}
               </div>
               

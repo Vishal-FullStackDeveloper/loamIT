@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import BlogDetailContent from './BlogDetailContent';
 
 interface BlogDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({ params }: BlogDetailPageProps): Promise<Metadata> {

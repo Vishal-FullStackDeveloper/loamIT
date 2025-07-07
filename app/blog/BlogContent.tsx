@@ -69,7 +69,8 @@ const BlogContent = () => {
       readTime: '6 min read',
       image: 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop',
       views: 1923,
-      likes: 89
+      likes: 89,
+      featured: false
     },
     {
       id: 3,
@@ -86,7 +87,8 @@ const BlogContent = () => {
       readTime: '5 min read',
       image: 'https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop',
       views: 1654,
-      likes: 72
+      likes: 72,
+      featured: false
     },
     {
       id: 4,
@@ -103,7 +105,8 @@ const BlogContent = () => {
       readTime: '7 min read',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop',
       views: 2156,
-      likes: 134
+      likes: 134,
+      featured: false
     },
     {
       id: 5,
@@ -120,7 +123,8 @@ const BlogContent = () => {
       readTime: '9 min read',
       image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop',
       views: 1789,
-      likes: 98
+      likes: 98,
+      featured: false
     },
     {
       id: 6,
@@ -137,7 +141,8 @@ const BlogContent = () => {
       readTime: '6 min read',
       image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop',
       views: 1432,
-      likes: 67
+      likes: 67,
+      featured: false
     }
   ];
 
