@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { 
-  ArrowRight, 
-  Calendar, 
-  MessageCircle, 
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  Calendar,
+  MessageCircle,
   FileText,
   Sparkles,
   Shield,
@@ -20,8 +20,8 @@ import {
   Award,
   Play,
   ChevronLeft,
-  ChevronRight
-} from 'lucide-react';
+  ChevronRight,
+} from "lucide-react";
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState(0);
@@ -29,64 +29,77 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const rotatingTexts = [
-    'AI-Powered Systems',
-    'Blockchain Solutions',
-    'AR/VR Experiences',
-    'Custom Software',
-    'Mobile Applications'
+    "AI-Powered Systems",
+    "Blockchain Solutions",
+    "AR/VR Experiences",
+    "Custom Software",
+    "Mobile Applications",
   ];
 
   const interactiveSlides = [
     {
       id: 1,
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'Real-time insights with machine learning predictions',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      title: "AI-Powered Analytics Dashboard",
+      description: "Real-time insights with machine learning predictions",
+      image:
+        "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       icon: Brain,
-      features: ['Predictive Analytics', 'Real-time Processing', 'Custom ML Models'],
-      color: 'from-blue-500 to-cyan-500',
-      stats: { accuracy: '94%', speed: '2.3s', users: '10K+' }
+      features: [
+        "Predictive Analytics",
+        "Real-time Processing",
+        "Custom ML Models",
+      ],
+      color: "from-blue-500 to-cyan-500",
+      stats: { accuracy: "94%", speed: "2.3s", users: "10K+" },
     },
     {
       id: 2,
-      title: 'Blockchain Transaction Network',
-      description: 'Secure, decentralized transaction processing',
-      image: 'https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      title: "Blockchain Transaction Network",
+      description: "Secure, decentralized transaction processing",
+      image:
+        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       icon: Shield,
-      features: ['Smart Contracts', 'Multi-chain Support', 'Zero-knowledge Proofs'],
-      color: 'from-orange-500 to-red-500',
-      stats: { security: '99.9%', tps: '50K', nodes: '500+' }
+      features: [
+        "Smart Contracts",
+        "Multi-chain Support",
+        "Zero-knowledge Proofs",
+      ],
+      color: "from-orange-500 to-red-500",
+      stats: { security: "99.9%", tps: "50K", nodes: "500+" },
     },
     {
       id: 3,
-      title: 'AR Shopping Experience',
-      description: 'Immersive product visualization and interaction',
-      image: 'https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      title: "AR Shopping Experience",
+      description: "Immersive product visualization and interaction",
+      image:
+        "https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       icon: Sparkles,
-      features: ['3D Product Models', 'Virtual Try-on', 'Spatial Tracking'],
-      color: 'from-green-500 to-teal-500',
-      stats: { engagement: '300%', conversion: '+45%', satisfaction: '4.9/5' }
+      features: ["3D Product Models", "Virtual Try-on", "Spatial Tracking"],
+      color: "from-green-500 to-teal-500",
+      stats: { engagement: "300%", conversion: "+45%", satisfaction: "4.9/5" },
     },
     {
       id: 4,
-      title: 'Mobile App Ecosystem',
-      description: 'Cross-platform applications with native performance',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      title: "Mobile App Ecosystem",
+      description: "Cross-platform applications with native performance",
+      image:
+        "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       icon: Smartphone,
-      features: ['React Native', 'Offline Sync', 'Push Notifications'],
-      color: 'from-purple-500 to-pink-500',
-      stats: { downloads: '1M+', rating: '4.8/5', platforms: '3' }
+      features: ["React Native", "Offline Sync", "Push Notifications"],
+      color: "from-purple-500 to-pink-500",
+      stats: { downloads: "1M+", rating: "4.8/5", platforms: "3" },
     },
     {
       id: 5,
-      title: 'Enterprise Data Platform',
-      description: 'Scalable data processing and business intelligence',
-      image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+      title: "Enterprise Data Platform",
+      description: "Scalable data processing and business intelligence",
+      image:
+        "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop",
       icon: Database,
-      features: ['Big Data Processing', 'Real-time Analytics', 'API Gateway'],
-      color: 'from-indigo-500 to-purple-500',
-      stats: { throughput: '1TB/h', uptime: '99.99%', apis: '200+' }
-    }
+      features: ["Big Data Processing", "Real-time Analytics", "API Gateway"],
+      color: "from-indigo-500 to-purple-500",
+      stats: { throughput: "1TB/h", uptime: "99.99%", apis: "200+" },
+    },
   ];
 
   useEffect(() => {
@@ -110,14 +123,17 @@ const Hero = () => {
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + interactiveSlides.length) % interactiveSlides.length);
+    setCurrentSlide(
+      (prev) =>
+        (prev - 1 + interactiveSlides.length) % interactiveSlides.length,
+    );
   };
 
   const stats = [
-    { icon: Users, value: '500+', label: 'Happy Clients' },
-    { icon: Zap, value: '99%', label: 'Uptime' },
-    { icon: Shield, value: '24/7', label: 'Support' },
-    { icon: Sparkles, value: '50+', label: 'Projects' },
+    { icon: Users, value: "500+", label: "Happy Clients" },
+    { icon: Zap, value: "99%", label: "Uptime" },
+    { icon: Shield, value: "24/7", label: "Support" },
+    { icon: Sparkles, value: "50+", label: "Projects" },
   ];
 
   const currentSlideData = interactiveSlides[currentSlide];
@@ -135,29 +151,34 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
-            <div className={`transform transition-all duration-1000 ${
-              isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
-            }`}>
+            <div
+              className={`transform transition-all duration-1000 ${
+                isVisible
+                  ? "translate-x-0 opacity-100"
+                  : "-translate-x-10 opacity-0"
+              }`}
+            >
               <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4" />
                 <span>Leading Innovation in Technology</span>
               </div>
 
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Building the{' '}
+                Building the{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500 bg-clip-text text-transparent">
                   Future
                 </span>
                 <br />
-                with{' '}
+                with{" "}
                 <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-600 bg-clip-text text-transparent">
-                  AI Innovation
+                  AI Innovation.
                 </span>
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                We design powerful, intelligent systems for digital-first enterprises. 
-                Transform your business with cutting-edge technology solutions that drive growth and innovation.
+                We design powerful, intelligent systems for digital-first
+                enterprises. Transform your business with cutting-edge
+                technology solutions that drive growth and innovation.
               </p>
 
               <div className="text-lg text-blue-600 font-medium mb-8 h-8">
@@ -199,7 +220,9 @@ const Hero = () => {
                     <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg mb-2 group-hover:scale-110 transition-transform">
                       <stat.icon className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                    <div className="text-2xl font-bold text-gray-900">
+                      {stat.value}
+                    </div>
                     <div className="text-sm text-gray-600">{stat.label}</div>
                   </div>
                 ))}
@@ -207,19 +230,36 @@ const Hero = () => {
             </div>
 
             {/* Right Column - Interactive Slides */}
-            <div className={`transform transition-all duration-1000 delay-300 ${
-              isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-            }`}>
+            <div
+              className={`transform transition-all duration-1000 delay-300 ${
+                isVisible
+                  ? "translate-x-0 opacity-100"
+                  : "translate-x-10 opacity-0"
+              }`}
+            >
               <div className="relative">
                 {/* Main Slide Container */}
                 <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl overflow-hidden">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500"></div>
-                    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                    <svg
+                      className="absolute inset-0 w-full h-full"
+                      viewBox="0 0 100 100"
+                    >
                       <defs>
-                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                          <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" strokeWidth="0.5"/>
+                        <pattern
+                          id="grid"
+                          width="10"
+                          height="10"
+                          patternUnits="userSpaceOnUse"
+                        >
+                          <path
+                            d="M 10 0 L 0 0 0 10"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="0.5"
+                          />
                         </pattern>
                       </defs>
                       <rect width="100" height="100" fill="url(#grid)" />
@@ -230,7 +270,9 @@ const Hero = () => {
                   <div className="relative z-10">
                     {/* Header */}
                     <div className="flex items-center justify-between mb-6">
-                      <div className={`inline-flex items-center space-x-2 px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${currentSlideData.color} text-white`}>
+                      <div
+                        className={`inline-flex items-center space-x-2 px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${currentSlideData.color} text-white`}
+                      >
                         <currentSlideData.icon className="w-4 h-4" />
                         <span>Live Demo</span>
                       </div>
@@ -275,12 +317,21 @@ const Hero = () => {
 
                     {/* Features */}
                     <div className="mb-6">
-                      <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Features:</h4>
+                      <h4 className="text-sm font-semibold text-gray-700 mb-3">
+                        Key Features:
+                      </h4>
                       <div className="grid grid-cols-1 gap-2">
                         {currentSlideData.features.map((feature, index) => (
-                          <div key={index} className="flex items-center space-x-2">
-                            <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${currentSlideData.color}`}></div>
-                            <span className="text-sm text-gray-600">{feature}</span>
+                          <div
+                            key={index}
+                            className="flex items-center space-x-2"
+                          >
+                            <div
+                              className={`w-2 h-2 rounded-full bg-gradient-to-r ${currentSlideData.color}`}
+                            ></div>
+                            <span className="text-sm text-gray-600">
+                              {feature}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -288,12 +339,18 @@ const Hero = () => {
 
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 mb-6">
-                      {Object.entries(currentSlideData.stats).map(([key, value], index) => (
-                        <div key={index} className="text-center">
-                          <div className="text-lg font-bold text-gray-900">{value}</div>
-                          <div className="text-xs text-gray-600 capitalize">{key}</div>
-                        </div>
-                      ))}
+                      {Object.entries(currentSlideData.stats).map(
+                        ([key, value], index) => (
+                          <div key={index} className="text-center">
+                            <div className="text-lg font-bold text-gray-900">
+                              {value}
+                            </div>
+                            <div className="text-xs text-gray-600 capitalize">
+                              {key}
+                            </div>
+                          </div>
+                        ),
+                      )}
                     </div>
 
                     {/* Action Button */}
@@ -315,8 +372,8 @@ const Hero = () => {
                       onClick={() => setCurrentSlide(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
                         index === currentSlide
-                          ? 'bg-blue-600 w-8'
-                          : 'bg-gray-300 hover:bg-gray-400'
+                          ? "bg-blue-600 w-8"
+                          : "bg-gray-300 hover:bg-gray-400"
                       }`}
                     />
                   ))}
