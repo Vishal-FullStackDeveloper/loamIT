@@ -1,52 +1,52 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { 
-  Brain, 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Linkedin, 
-  Twitter, 
-  Youtube, 
+import Link from "next/link";
+import {
+  Brain,
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Twitter,
+  Youtube,
   Github,
   ArrowRight,
-  Send
-} from 'lucide-react';
+  Send,
+} from "lucide-react";
 
 const Footer = () => {
   const navigation = {
     company: [
-      { name: 'About Us', href: '/about' },
-      { name: 'Our Team', href: '/about#team' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Contact', href: '/contact' },
+      { name: "About Us", href: "/about" },
+      { name: "Our Team", href: "/about#team" },
+      { name: "Careers", href: "/careers" },
+      { name: "Contact", href: "/contact" },
     ],
     services: [
-      { name: 'AI Development', href: '/products#ai' },
-      { name: 'Web & Mobile Apps', href: '/products#web-mobile' },
-      { name: 'AR/VR Solutions', href: '/products#ar-vr' },
-      { name: 'Blockchain', href: '/products#blockchain' },
+      { name: "AI Development", href: "/products#ai" },
+      { name: "Web & Mobile Apps", href: "/products#web-mobile" },
+      { name: "AR/VR Solutions", href: "/products#ar-vr" },
+      { name: "Blockchain", href: "/products#blockchain" },
     ],
     resources: [
-      { name: 'Case Studies', href: '/projects' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Support Center', href: '/support' },
-      { name: 'API Documentation', href: '/docs' },
+      { name: "Case Studies", href: "/projects" },
+      { name: "Blog", href: "/blog" },
+      { name: "Support Center", href: "/support" },
+      { name: "API Documentation", href: "/docs" },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'Cookie Policy', href: '/cookies' },
-      { name: 'Security', href: '/security' },
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Cookie Policy", href: "/cookies" },
+      { name: "Security", href: "/security" },
     ],
   };
 
   const socialLinks = [
-    { name: 'LinkedIn', href: '#', icon: Linkedin },
-    { name: 'Twitter', href: '#', icon: Twitter },
-    { name: 'YouTube', href: '#', icon: Youtube },
-    { name: 'GitHub', href: '#', icon: Github },
+    { name: "LinkedIn", href: "#", icon: Linkedin },
+    { name: "Twitter", href: "#", icon: Twitter },
+    { name: "YouTube", href: "#", icon: Youtube },
+    { name: "GitHub", href: "#", icon: Github },
   ];
 
   return (
@@ -69,19 +69,26 @@ const Footer = () => {
                 </div>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Building the future with intelligent, immersive, and decentralized technology 
-                solutions. We transform businesses through innovation and cutting-edge development.
+                Building the future with intelligent, immersive, and
+                decentralized technology solutions. We transform businesses
+                through innovation and cutting-edge development.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
-                  <a href="mailto:hello@loamitsolutions.com" className="text-gray-300 hover:text-white transition-colors">
-                    hello@loamitsolutions.com
+                  <a
+                    href="mailto:hello@loamitsolutions.com"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
+                    hello@loamitsolutions.commm
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-400" />
-                  <a href="tel:+1-555-0123" className="text-gray-300 hover:text-white transition-colors">
+                  <a
+                    href="tel:+1-555-0123"
+                    className="text-gray-300 hover:text-white transition-colors"
+                  >
                     +1 (555) 123-4567
                   </a>
                 </div>
@@ -170,8 +177,8 @@ const Footer = () => {
                 Stay Updated with Tech Insights
               </h3>
               <p className="text-gray-300 mb-6">
-                Get the latest updates on AI, blockchain, and emerging technologies. 
-                Plus exclusive insights from our development team.
+                Get the latest updates on AI, blockchain, and emerging
+                technologies. Plus exclusive insights from our development team.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
