@@ -434,7 +434,7 @@ const SupportContent = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone Support</h3>
                       <p className="text-sm text-gray-600">Available 24/7 for critical issues</p>
-                      <p className="font-medium text-blue-600">+1 (555) 123-4567</p>
+                      <p className="font-medium text-blue-600">+91 - 9310819195</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -444,7 +444,7 @@ const SupportContent = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900">Email Support</h3>
                       <p className="text-sm text-gray-600">Response within 2 hours</p>
-                      <p className="font-medium text-green-600">support@loamitsolutions.com</p>
+                      <p className="font-medium text-green-600">karan@loamit.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">

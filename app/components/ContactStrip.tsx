@@ -28,7 +28,7 @@ const ContactStrip = () => {
       title: 'Direct Call',
       description: 'Speak with an expert immediately',
       action: 'Call Now',
-      href: 'tel:+1-555-0123',
+      href: 'tel:+91-9310819195',
       color: 'from-purple-500 to-purple-600',
       hoverColor: 'hover:from-purple-600 hover:to-purple-700'
     }
@@ -81,12 +81,12 @@ const ContactStrip = () => {
             <div>
               <Mail className="w-6 h-6 mx-auto mb-2" />
               <p className="text-sm font-medium">Email Us</p>
-              <p className="text-xs text-blue-100">hello@loamitsolutions.com</p>
+              <p className="text-xs text-blue-100">karan@loamit.com</p>
             </div>
             <div>
               <Phone className="w-6 h-6 mx-auto mb-2" />
               <p className="text-sm font-medium">Call Us</p>
-              <p className="text-xs text-blue-100">+1 (555) 123-4567</p>
+              <p className="text-xs text-blue-100">+91 - 9310819195</p>
             </div>
             <div>
               <MessageCircle className="w-6 h-6 mx-auto mb-2" />

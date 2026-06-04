@@ -35,10 +35,8 @@ const Footer = () => {
       { name: "API Documentation", href: "/docs" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "/terms" },
-      { name: "Cookie Policy", href: "/cookies" },
-      { name: "Security", href: "/security" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms & Service", href: "/terms-of-service" },
     ],
   };
 
@@ -77,25 +75,25 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-400" />
                   <a
-                    href="mailto:hello@loamitsolutions.com"
+                    href="mailto:karan@loamit.com"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    hello@loamitsolutions.commm
+                    karan@loamit.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-400" />
                   <a
-                    href="tel:+1-555-0123"
+                    href="tel:+91-9310819195"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    +1 (555) 123-4567
+                    +91 - 9310819195
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-blue-400" />
                   <span className="text-gray-300">
-                    San Francisco, CA • Remote Global
+                    Etheria Tower, Sector 90, Noida, Uttar Pradesh, India
                   </span>
                 </div>
               </div>
@@ -208,7 +206,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 Loam IT Solutions. All rights reserved.
+              © Copyright 2026 Loam IT Solutions. All rights reserved.
             </div>
             <div className="flex space-x-6">
               {socialLinks.map((social) => (

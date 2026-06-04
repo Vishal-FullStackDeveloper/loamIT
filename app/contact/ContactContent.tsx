@@ -82,7 +82,7 @@ const ContactContent = () => {
       icon: Phone,
       title: 'Call Us',
       description: 'Speak with an expert immediately',
-      contact: '+1 (555) 123-4567',
+      contact: '+91 - 9310819195',
       available: '24/7 Available',
       color: 'from-blue-500 to-blue-600'
     },
@@ -90,7 +90,7 @@ const ContactContent = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Get a detailed response within 2 hours',
-      contact: 'hello@loamitsolutions.com',
+      contact: 'karan@loamit.com',
       available: 'Quick Response',
       color: 'from-green-500 to-green-600'
     },
@@ -210,7 +210,7 @@ const ContactContent = () => {
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                          placeholder="+1 (555) 123-4567"
+                          placeholder="+91 - 9310819195"
                         />
                       </div>
                       <div>
@@ -488,30 +488,30 @@ const ContactContent = () => {
                 Office Information
               </h2>
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-gray-900">Headquarters</p>
-                    <p className="text-sm text-gray-600">
-                      123 Tech Street, Suite 100<br />
-                      San Francisco, CA 94105
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="w-5 h-5 text-blue-600 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-gray-900">Headquarters</p>
+                        <p className="text-sm text-gray-600">
+                      Etheria Tower, Sector 90<br />
+                      Noida, Uttar Pradesh, India
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <Clock className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-gray-900">Business Hours</p>
+                    <div className="flex items-start space-x-3">
+                      <Clock className="w-5 h-5 text-blue-600 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-gray-900">Business Hours</p>
                     <p className="text-sm text-gray-600">
                       Monday - Friday: 9:00 AM - 6:00 PM PST<br />
                       Weekend: Available for urgent matters
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <Globe className="w-5 h-5 text-blue-600 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-gray-900">Global Reach</p>
+                    <div className="flex items-start space-x-3">
+                      <Globe className="w-5 h-5 text-blue-600 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-gray-900">Global Reach</p>
                     <p className="text-sm text-gray-600">
                       Remote team across 15+ countries<br />
                       24/7 support available
